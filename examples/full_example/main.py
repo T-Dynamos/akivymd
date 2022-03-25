@@ -1,6 +1,9 @@
 import ast
 import sys
 from os import path
+from kvdroid.tools.package import all_packages
+
+print(all_packages())
 
 sys.path.append(path.join(path.abspath(__file__).rsplit("examples", 1)[0]))
 from kivy.factory import Factory  # noqa
